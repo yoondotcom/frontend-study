@@ -21,9 +21,22 @@
         }
 
         .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             height: 80px;
             background-color: #d7f5ff;
         }
+        .home_side_icons {
+            list-style: none;
+            display: flex;
+            padding-left: 0;
+        }
+        .home_side_icons li {
+            padding: 8px 12px;
+        }
+
+
 
         /*.sidebar {*/
         /*    background: gold;*/
@@ -36,6 +49,15 @@
             background: gold;
             flex: 0 1 200px;
             order: 1;
+        }
+
+        .sidebar_menu {
+            list-style: none;
+            padding-left: 0;
+
+        }
+        .sidebar_menu li {
+            padding: 8px 12px;
         }
 
         /**
@@ -69,8 +91,22 @@
 </head>
 <body>
 <div class="container">
-    <div class="header">header</div>
-    <div class="sidebar">sidebar</div>
+    <div class="header">
+        <div></div>
+        <div class="home_icons">Home</div>
+        <ul class="home_side_icons">
+            <li><a href="">Log in</a></li>
+            <li><a href="">Sign Up</a></li>
+        </ul>
+    </div>
+    <div class="sidebar">
+        <ul class="sidebar_menu">
+            <li><a href="">회원관리</a></li>
+            <li><a href="">계약관리</a></li>
+            <li><a href="">코드관리</a></li>
+            <li><a href="">통계관리</a></li>
+        </ul>
+    </div>
     <div class="content">
         <p>
             CSS Flexible Box Layout은 사용자 인터페이스 디자인과 단방향 레이아웃에 최적화된 CSS 모듈입니다. 플렉스 레이아웃 모델에서는, 플렉스 컨테이너의 자식을 어떤 방향으로도 배치할
