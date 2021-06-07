@@ -71,12 +71,37 @@
            order: 순서
         */
         .content {
-            text-align: left;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: white;
             background: deepskyblue;
             padding: 1rem;
             order: 2;
             flex: 3 0px;
         }
+
+        .main_content {
+            background-color: darkblue;
+            height: 150px;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .sub_content_container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            
+        }
+        
+        .sub_content {
+            background-color:darkcyan;
+            margin: 10px 10px 0px 10px;
+            flex: 1;
+            height: 150px;
+        }
+
+        
 
         .footer {
             background-color: #fbbe28;
@@ -108,10 +133,15 @@
         </ul>
     </div>
     <div class="content">
-        <p>
-            CSS Flexible Box Layout은 사용자 인터페이스 디자인과 단방향 레이아웃에 최적화된 CSS 모듈입니다. 플렉스 레이아웃 모델에서는, 플렉스 컨테이너의 자식을 어떤 방향으로도 배치할
-            수 있으며, 자식의 크기도 유연하게("플렉시블") 빈 공간을 채우거나, 컨테이너를 넘어가지 않도록 줄어듭니다. 자식 간의 수평 및 수직 정렬 또한 쉽게 조작할 수 있습니다.
-        </p>
+        <div class="main_content">main content</div>
+        <div class="sub_content_container">
+            <div class="sub_content">sub content01</div>
+            <div class="sub_content">sub content02</div>
+            <div class="sub_content">sub content03</div>
+            <div class="sub_content">sub content04</div>
+            <div class="sub_content">sub content05</div>
+            <div class="sub_content">sub content06</div>
+        </div>
     </div>
     <div class="footer">footer</div>
 </div>
