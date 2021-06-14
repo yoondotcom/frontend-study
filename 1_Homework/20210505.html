@@ -56,6 +56,20 @@
             padding-left: 0;
 
         }
+
+        .side_main_menu {
+            margin: 12px;
+            margin-bottom: 20px;
+            padding: 12px;
+            width: 150px;
+            height: 16px;
+            border: 1px solid blue;
+            border-radius: 30px;
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+        }
+
         .sidebar_menu li {
             padding: 8px 12px;
         }
@@ -91,7 +105,6 @@
             display: flex;
             flex-direction: row;
             flex-wrap:wrap;
-            
         }
         
         .sub_content {
@@ -101,8 +114,6 @@
             height: 150px;
         }
 
-        
-
         .footer {
             background-color: #fbbe28;
             order: 3;
@@ -111,13 +122,11 @@
         body {
             padding: 1rem;
         }
-
     </style>
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <div></div>
         <div class="home_icons">Home</div>
         <ul class="home_side_icons">
             <li><a href="">Log in</a></li>
@@ -126,10 +135,25 @@
     </div>
     <div class="sidebar">
         <ul class="sidebar_menu">
-            <li><a href="">회원관리</a></li>
-            <li><a href="">계약관리</a></li>
-            <li><a href="">코드관리</a></li>
-            <li><a href="">통계관리</a></li>
+            <div class="side_main_menu">회원관리</div>
+            <li><a href=""></a>교육기관</li>
+            <li><a href=""></a>공급업체</li>
+            <li><a href=""></a>S2B인증 공급업체</li>
+            <li><a href=""></a>개인회원</li>
+            <li><a href=""></a>메일발송</li>
+            <li><a href=""></a>SMS 발송</li>
+            <li><a href=""></a>회원가입추첨</li>
+            <li><a href=""></a>이벤트관리</li>
+            <li><a href=""></a>복지기금</li>
+            <li><a href=""></a>복지기금 현황</li>
+            <li><a href=""></a>복지기금 환급</li>
+            <li><a href=""></a>복지기금 신청현황</li>
+            <li><a href=""></a>공급업체 이용제한 요청목록</li>
+            <li><a href=""></a>제한중인 공급업채 목록</li>
+            <li><a href=""></a>패널단 신청 현황</li>
+            <li><a href=""></a>SMPP 연계정보 조회</li>
+            <li><a href=""></a>SMS 발송 신청 목록</li>
+            <li><a href=""></a>공급업체 로그 기록 관리</li>
         </ul>
     </div>
     <div class="content">
