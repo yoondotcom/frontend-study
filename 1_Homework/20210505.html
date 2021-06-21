@@ -27,6 +27,8 @@
             height: 80px;
             background-color: #d7f5ff;
         }
+
+
         .home_side_icons {
             list-style: none;
             display: flex;
@@ -126,7 +128,25 @@
             height: 150px;
             margin: 10px 10px 10px 10px;
         }
-        
+
+        .select_1 {
+            float: left;
+            width: 200px;
+        }
+
+        .select_2 {
+            float: left;
+            width: 200px;
+        }
+
+        .top2_2 {
+            width: 200px;
+        }
+
+        .top2_3 {
+            width: 200px;
+        }
+
         .sub_content {
             background-color:darkcyan;
             margin: 10px 10px 0px 10px;
@@ -151,10 +171,10 @@
 <body>
 <div class="container">
     <div class="header">
-        <div class="home_icons">Home</div>
+        <div class="home_icons">S2B 교육기관 전자조달시스템</div>
         <ul class="home_side_icons">
-            <li><a href="">Log in</a></li>
-            <li><a href="">Sign Up</a></li>
+            <li class="main_logo"><a href="">김지윤님이 로그인하셨습니다.</a></li>
+            <li><a href="">로그아웃</a></li>
         </ul>
     </div>
     <div class="top">
@@ -204,7 +224,51 @@
             <div>Home>회원관리>교육기관</div>
         </div>
         <div class="content_top2">조회 [] / 승인기관 [] / 기간 승인 전체 [] / 전체 []</div>
-        <div class="main_content">main content</div>
+        <table class="main_content">
+            <tbody>
+                <tr>
+                    <td>
+                        <select class="select_1">
+                            <option value="">교육기관 명</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="top2_2">2</div>
+                    </td>
+                    <td>
+                        <div class="top2_3">교육기관 상태</div>
+                    </td>
+                    <td>
+                        <select class="select_2">
+                            <option value="">승인</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select select class="select_1">
+                        <option value="">가입일</option>
+                    </select></td>
+                    <td>
+                        <div class="top2_2">달력자리</div>
+                    </td>
+                    <td>
+                        <div class="top2_3">교육기관 구분</div>
+                    </td>
+                    <td>
+                        <select class="select_2">
+                            <option value="">전체</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>검색</button>
+                        <button>수정</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div class="footer">
         <!-- <div class="footer_top">고객상담 : 1577-3309 (월~금 09:00~18:00)</div> -->
