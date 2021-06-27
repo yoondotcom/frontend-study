@@ -1,0 +1,161 @@
+/**
+flex 선언 최상위 wrapper 명칭은 wrapper 혹은 container 라는 단어룰 주료 사용
+ */
+ 
+ .container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/**
+    > 자식 노드 * 선택자 전체 선택
+    https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Selectors
+ */
+
+.container > * {
+    flex: 1 100%
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #d7f5ff;
+}
+
+.home_side_icons {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.home_side_icons li {
+    padding: 8px 12px;
+}
+
+.top {
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.top_menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*.sidebar {*/
+/*    background: gold;*/
+/*    flex: initial; !** 0, 1, auto**!*/
+/*    min-width: 200px;*/
+/*    order: 1;*/
+/*}   아래 참고.. */
+
+.sidebar {
+    border: 2px solid blue;
+    border-radius: 10px;
+    flex: 0 1 200px;
+    order: 1;
+}
+.sidebar_menu {
+    list-style: none;
+    padding-left: 0;
+}
+.side_main_menu {
+    margin: 12px;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 150px;
+    height: 16px;
+    border: 1px solid blue;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+.sidebar_menu li {
+    padding: 8px 12px;
+}
+/**
+   padding box 안에 여백
+   margin box 밖에 여백
+   flex 옵션 설명 : https://developer.mozilla.org/ko/docs/Web/CSS/flex
+   flex: grow, shrink, basis
+   grow(자라다) :  flex-item 요소가, flex-container 요소 내부에서 할당 가능한 공간의 정도를 선언합니다
+   shrink(수축) : 만약 flex-item 요소의 크기가 flex-container 요소의 크기보다 클 때 flex-shrink 속성을 사용하는데, 설정된 숫자값에 따라 flex-container 요소 내부에서 flex-item 요소의 크기가 축소됩니
+   basis(기초) : 플렉스 아이템의 초기 크기를 지정합니다. box-sizing을 따로 지정하지 않는다면 콘텐츠 박스의 크기를 변경합니다.
+   order: 순서
+*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: deepskyblue;
+    padding: 1rem;
+    order: 2;
+    flex: 3 0px;
+}
+
+.content_top {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin: 10px 10px 5px 10px
+}
+
+.content_top2 {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    margin: 0px 10px 5px 10px;
+}
+
+.main_content {
+    background-color: darkblue;
+    height: 150px;
+    margin: 10px 10px 10px 10px;
+}
+
+.select_1 {
+    float: left;
+    width: 200px;
+}
+
+.select_2 {
+    float: left;
+    width: 200px;
+}
+
+.top2_2 {
+    width: 200px;
+}
+
+.top2_3 {
+    width: 200px;
+}
+
+.sub_content {
+    background-color:darkcyan;
+    margin: 10px 10px 0px 10px;
+    flex: 1;
+    height: 150px;
+}
+
+.footer {
+    margin-top: 10px;
+    order: 3;
+}
+
+.footer_content2 {
+    text-align : center;
+}
+
+body {
+    padding: 1rem;
+}
